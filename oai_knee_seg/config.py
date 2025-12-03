@@ -17,16 +17,16 @@ class Config:
     download_data: bool = True
 
     # training hyperparams
-    target_spacing: tuple = (0.7, 0.365, 0.365)  # (z, y, x) mm
+    target_spacing: tuple = (0.8, 0.36, 0.36)  # (z, y, x) mm
     batch_size: int = 1
-    epochs: int = 200
+    epochs: int = 350
     val_split: int = 30
     lr: float = 1e-4
 
     # sliding window inferer
-    roi_size: tuple = (96, 192, 192)
+    roi_size: tuple = (112, 224, 224)
     sw_batch_size: int = 1
-    overlap: float = 0.5
+    overlap: float = 0.55
 
 
 def set_seed(s: int = 42):
